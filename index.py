@@ -18,7 +18,7 @@ for link in parsed_html.select("td:nth-of-type(3)"):
 for link in parsed_html.select("td:nth-of-type(4)"):
     type = link.get_text
     types.append(str(type))
-#-------------------- БД  ------------------
+#DB
 def rezult_sql(sql_zapros):
     db = pymysql.connect("localhost", "root", "", "PythonParser")
     cursor = db.cursor()
@@ -43,4 +43,3 @@ for key in range(len(students)):
     else:
         continue
 print("Добавлена " + str(new_update) + " строка!")
-
