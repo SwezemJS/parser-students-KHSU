@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Список заявлений</title>
+    <style>
+        body {
+            background: url("/Content/Images/egeCalculator-bg.png") no-repeat fixed center;
+            background-size: cover;
+        }
+
+        hr {
+            margin-top: 5px !important;
+            margin-bottom: 5px !important;
+            border: 0;
+            border-top: 1px solid #000 !important;
+            width: 270px;
+            margin-left: 1px;
+        }
+
+        td {
+            padding: 2px 4px !important;
+            background-color: rgba(255,255,255,0.4);
+            cursor: default;
+        }
+
+        a {
+            color: black !important;
+            cursor: pointer;
+        }
+        th {
+            background-color: rgba(255,255,255,0.7)
+        }
+        tr:hover {
+            background-color: rgba(215,215,255,0.4) !important;
+        }
+    </style>
+    <script type="text/javascript" src="%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9_files/jquery-3.js"></script>
+    <script type="text/javascript" src="%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9_files/jquery-ui-1.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn(250);
+                    $('#toBack').fadeOut(250);
+                } else {
+                    $('#toTop').fadeOut(250);
+                    $('#toBack').fadeIn(250);
+                }
+            });
+            $('#toTop').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, 500);
+            });
+        });
+    </script>
+    <link href="%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B7%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B9_files/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    
+    <div style="margin-left: 15px;">
+        <div style="position: absolute; top: 10px; right: 15px; z-index: 101;">
+            <a class="btn btn-default" id="toBack" href="http://edu.khsu.ru/Rating/CGList?finsource=1">Вернуться назад</a>
+        </div>
+        <h3 style="font-weight:600">09.03.01 (ОФО) Информатика и 
+вычислительная техника: Программное обеспечение средств вычислительной 
+техники и автоматизированных систем</h3>
+        <div>
+            Количество бюджетных мест:<b>50</b>
+            <hr>
+            Места целевой контрактной подготовки:<b>5</b>
+            <hr>
+            Мест с оплатой обучения:<b>10</b>
+        </div>
+        <h3 style="color:#369; font-weight:600">Список заявлений:</h3>
+        <table class="table table-bordered" style="width: 100%; font-size:small;">
+            <tbody><tr style="height: 70px !important;">
+                <th style="width:55px">№п/п</th>
+                <th class="fio">ФИО абитуриента</th>
+                <th class="fio">Дата подачи</th>
+                <th>Тип вступительного испытания</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Доброва Татьяна Вячеславовна</td>
+                <td>20.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>2</td>
+                <td>Михайлов Павел Дмитриевич</td>
+                <td>22.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>3</td>
+                <td>Федосеева Екатерина Юрьевна</td>
+                <td>24.06.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Килижеков Роман Валерьевич</td>
+                <td>24.06.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>5</td>
+                <td>Сингилеев Алексей Максимович</td>
+                <td>24.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>6</td>
+                <td>Бузунов Данил Владимирович</td>
+                <td>25.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>7</td>
+                <td>Ахрамович Даниил Вячеславович</td>
+                <td>25.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Адышев Юрий Андреевич</td>
+                <td>26.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Ступак Данила Владиславович</td>
+                <td>26.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>10</td>
+                <td>Шевченко Милана Вячеславовна</td>
+                <td>26.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Федоткин Иван Витальевич</td>
+                <td>26.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>12</td>
+                <td>Скосырский Артём Дмитриевич</td>
+                <td>26.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>13</td>
+                <td>Голубева Софья Алексеевна</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Арнгольд Наталья Александровна</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Гуреев Дмитрий Александрович</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Деменов Андрей Николаевич</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Дергачева Виктория Викторовна</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>18</td>
+                <td>Новоселов Артем Александрович</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>19</td>
+                <td>Петров Михаил Андреевич</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Петров Антон Дмитриевич</td>
+                <td>27.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Ледюков Денис Игоревич</td>
+                <td>28.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Яцутко Дарья Александровна</td>
+                <td>28.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Новоселов Глеб Олегович</td>
+                <td>28.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Иконников Артур Романович</td>
+                <td>28.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>25</td>
+                <td>Яковченко Виктория Игоревна</td>
+                <td>28.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>26</td>
+                <td>Винокуров Артем Андреевич</td>
+                <td>28.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Плотников Павел Сергеевич</td>
+                <td>28.06.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Сокольников Владислав Владимирович</td>
+                <td>29.06.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>29</td>
+                <td>Коваленко Роман Игоревич</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Кучугешев Игорь Владимирович</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>Крикова Мария Сергеевна</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Кужаков Андрей Викторович</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Мишаков Данила Алексеевич</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>Топуран Тумен Херелович</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Мальдер Владислав Алексеевич</td>
+                <td>01.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>36</td>
+                <td>Орлов Дмитрий Сергеевич</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Угдыжекова Регина Александровна</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Лапа Максим Евгеньевич</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>39</td>
+                <td>Краснов Богдан Денисович</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Рудаков Михаил Сергеевич</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>41</td>
+                <td>Курбатов Дмитрий Сергеевич</td>
+                <td>01.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>42</td>
+                <td>Кострицын Илья Александрович</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>43</td>
+                <td>Молиборода Дмитрий Александрович</td>
+                <td>02.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>44</td>
+                <td>Сюсина Анастасия Андреевна</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>45</td>
+                <td>Судочаков Юрий Сергеевич</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>Спирина Ольга Александровна</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>47</td>
+                <td>Кунгуров Данил Вячеславович</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>48</td>
+                <td>Мельников Вячеслав Викторович</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>Шишлянникова Татьяна Анатольевна</td>
+                <td>02.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>50</td>
+                <td>Гордиенко Арина Евгеньевна</td>
+                <td>02.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>Токмочев Дмитрий Сергеевич</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>Милкин Дмитрий Иванович</td>
+                <td>02.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>Николаев Даниил Игоревич</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>54</td>
+                <td>Миндибеков Кирилл Алексеевич</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>Раткин Федор Андреевич</td>
+                <td>02.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>56</td>
+                <td>Третьяков Кирилл Романович</td>
+                <td>02.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>Кутергин Максим Викторович</td>
+                <td>02.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>Кургундаева Надежда Александровна</td>
+                <td>02.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>59</td>
+                <td>Ерошин Даниил Валерьевич</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>Мельник Ольга Владимировна</td>
+                <td>03.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>61</td>
+                <td>Хертек Виктория Владимировна</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>62</td>
+                <td>Шабанов Кирилл Олегович</td>
+                <td>03.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>63</td>
+                <td>Михайлов Иван Игоревич</td>
+                <td>03.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>64</td>
+                <td>Доронина Олеся Анатольевна</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>65</td>
+                <td>Гладков Денис Игоревич</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>66</td>
+                <td>Любаев Вячеслав Евгеньевич</td>
+                <td>03.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>67</td>
+                <td>Васильева Анна Владимировна</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>68</td>
+                <td>Торбостаев Дмитрий Алексеевич</td>
+                <td>03.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>69</td>
+                <td>Ермаков Никита Владимирович</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>70</td>
+                <td>Давыдова Лилия Анатольевна</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>71</td>
+                <td>Патачаков Александр Александрович</td>
+                <td>03.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>72</td>
+                <td>Каунова Дарья Михайловна</td>
+                <td>03.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>73</td>
+                <td>Тюкалова Анастасия Федоровна</td>
+                <td>03.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>74</td>
+                <td>Кривоносов Роман Александрович</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>75</td>
+                <td>Седипей Начын Витальевич</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>76</td>
+                <td>Васин Павел Яковлевич</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>77</td>
+                <td>Барыбин Дмитрий Александрович</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>78</td>
+                <td>Чучунов Сергей Владимирович</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>79</td>
+                <td>Хитаришвили Артем Тристанович</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>80</td>
+                <td>Сафронов Никита Викторович</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>81</td>
+                <td>Тимченко Игорь Васильевич</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>82</td>
+                <td>Сорокин Никита Евгеньевич</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>83</td>
+                <td>Кончакова Анастасия Юрьевна</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>84</td>
+                <td>Кискидосов Денис Алексеевич</td>
+                <td>04.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>85</td>
+                <td>Бориско Александр Сергеевич</td>
+                <td>04.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>86</td>
+                <td>Верхотуров Владислав Игоревич</td>
+                <td>05.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>87</td>
+                <td>Апосова Анна Максимовна</td>
+                <td>05.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>88</td>
+                <td>Непомнящих Полина Сергеевна</td>
+                <td>05.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>89</td>
+                <td>Кулешов Александр Александрович</td>
+                <td>05.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>90</td>
+                <td>Кугушев Дмитрий Викторович</td>
+                <td>05.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>91</td>
+                <td>Маслеников Максим Сергеевич</td>
+                <td>05.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>92</td>
+                <td>Драчёв Александр Витальевич</td>
+                <td>05.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>93</td>
+                <td>Дрягин Андрей Андреевич</td>
+                <td>05.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>94</td>
+                <td>Топилина Марина Сергевна</td>
+                <td>05.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>95</td>
+                <td>Михайлов Виталий Викторович</td>
+                <td>05.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>96</td>
+                <td>Пермин Никита Игоревич</td>
+                <td>05.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>97</td>
+                <td>Ярлыкова Кристина Евгеньевна</td>
+                <td>05.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>98</td>
+                <td>Меховский Вадим Александрович</td>
+                <td>06.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>99</td>
+                <td>Рыскулов Темирлан Бахтиярович</td>
+                <td>06.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Аникин Святослав Анатольевич</td>
+                <td>06.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Мурачев Евгений Афанасьевич</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>102</td>
+                <td>Созоров Роман Александрович</td>
+                <td>08.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>103</td>
+                <td>Горшанов Владислав Андреевич</td>
+                <td>08.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>Торокова Мария Анатольевна</td>
+                <td>08.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>105</td>
+                <td>Ивандаев Александр Алексеевич</td>
+                <td>08.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>Великоредчанина Ирина Сергеевна</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>Замиховский Кирилл Максимович</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>108</td>
+                <td>Ооржак Менги Мергенович</td>
+                <td>08.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>109</td>
+                <td>Спирин Евгений Олегович</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>Сагалаков Карим Евгеньевич</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>Куулар Юлия Иванова</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>112</td>
+                <td>Корытин Илья Игоревич</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>113</td>
+                <td>Азраков Денис Даниярович</td>
+                <td>08.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>114</td>
+                <td>Шевяков Даниил Васильевич</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>115</td>
+                <td>Кулигин Алексей Андреевич</td>
+                <td>08.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>116</td>
+                <td>Филатов Ярослав Владимирович</td>
+                <td>09.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>117</td>
+                <td>Иванов Александр Леонидович</td>
+                <td>09.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>118</td>
+                <td>Беккер Валентин Эдуардович</td>
+                <td>09.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>119</td>
+                <td>Мглинец Михаил Александрович</td>
+                <td>09.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>120</td>
+                <td>Ооржак Юрий Сергеевич</td>
+                <td>09.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>121</td>
+                <td>Трояков Игорь Евгеньевич</td>
+                <td>09.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>122</td>
+                <td>Беспалов Владимир Андреевич</td>
+                <td>09.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>123</td>
+                <td>Чучунова Анастасия Юрьевна</td>
+                <td>09.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>124</td>
+                <td>Сыромятников Владимир Федорович</td>
+                <td>09.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>125</td>
+                <td>Чепчигашев Вадим Владимирович</td>
+                <td>09.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>126</td>
+                <td>Пузакова Ксения Юрьевна</td>
+                <td>10.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>127</td>
+                <td>Коломин Антон Владимирович</td>
+                <td>10.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>128</td>
+                <td>Загородний Максим Игоревич</td>
+                <td>10.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>129</td>
+                <td>Дажыбалвар Айрана Даниловна</td>
+                <td>10.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>130</td>
+                <td>Сат Диана Алексеевна</td>
+                <td>10.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>131</td>
+                <td>Ермолаев Дмитрий Александрович</td>
+                <td>10.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>132</td>
+                <td>Мамедов Айнур Намигович</td>
+                <td>10.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>133</td>
+                <td>Стариков Иван Алексеевич</td>
+                <td>10.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>134</td>
+                <td>Баранов Данил Евгеньевич</td>
+                <td>10.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>135</td>
+                <td>Трубачева Ангелина Сергеевна</td>
+                <td>10.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>136</td>
+                <td>Амыр-Оол Айзана Шолбановна</td>
+                <td>10.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>137</td>
+                <td>Сургутский Даниил Витальевич</td>
+                <td>10.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>138</td>
+                <td>Симонова Юлия Геннадьевна</td>
+                <td>10.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>139</td>
+                <td>Галыч Екатерина Андреевна</td>
+                <td>11.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>140</td>
+                <td>Коротчук Илья Игоревич</td>
+                <td>11.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>141</td>
+                <td>Ооржак Уран-Сай Геннадьевна</td>
+                <td>11.07.2019</td>
+                <td>ВИ</td>
+            </tr>
+            <tr>
+                <td>142</td>
+                <td>Лукина Анна Алексеевна</td>
+                <td>11.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>143</td>
+                <td>Буланцев Николай Николаевич</td>
+                <td>11.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>144</td>
+                <td>Винокур Данил Максимович</td>
+                <td>12.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>145</td>
+                <td>Николаев Ярослав Романович</td>
+                <td>12.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>146</td>
+                <td>Гасан Мария Викторовна</td>
+                <td>12.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>147</td>
+                <td>Кириллова Валерия Евгеньевна</td>
+                <td>12.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>148</td>
+                <td>Солодкий Алексей Романович</td>
+                <td>12.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>149</td>
+                <td>Самодуров Артем Дмитриевич</td>
+                <td>13.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>150</td>
+                <td>Белов Илья Сергеевич</td>
+                <td>13.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>151</td>
+                <td>Леончиков Андрей Игоревич</td>
+                <td>13.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>152</td>
+                <td>Павлов Никита Романович</td>
+                <td>13.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>153</td>
+                <td>Анфимов Андрей Денисович</td>
+                <td>13.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>154</td>
+                <td>Божко Даниэль Дмитриевич</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>155</td>
+                <td>Кызынгашев Артем Викторович</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>156</td>
+                <td>Соловьёв Кирилл Игоревич</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>157</td>
+                <td>Латиков Никита Ярославович</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>158</td>
+                <td>Сергеев Павел Дмитриевич</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>159</td>
+                <td>Шинтяпин Никита Константинович</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>160</td>
+                <td>Бояршинов Кирилл Евгеньевич</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>161</td>
+                <td>Ботандаев Амир Иосифович</td>
+                <td>15.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>162</td>
+                <td>Межеков Алдар Витальевич</td>
+                <td>16.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>163</td>
+                <td>Рыжов Никита Сергеевич</td>
+                <td>16.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>164</td>
+                <td>Закияшко Полина Ивановна</td>
+                <td>16.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>165</td>
+                <td>Самитин Кирилл Павлович</td>
+                <td>16.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>166</td>
+                <td>Хомушку Айлаана Урановна</td>
+                <td>17.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>167</td>
+                <td>Воронкова Мария Ивановна</td>
+                <td>17.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>168</td>
+                <td>Кобелев Дмитрий Николаевич</td>
+                <td>17.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>169</td>
+                <td>Демиденко Виктор Николаевич</td>
+                <td>17.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>170</td>
+                <td>Боев Сергей Иванович</td>
+                <td>18.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>171</td>
+                <td>Леонова Екатерина Юрьевна</td>
+                <td>18.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>172</td>
+                <td>Самсонов Владислав Дмитриевич</td>
+                <td>18.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>173</td>
+                <td>Бахтараев Александр Владимирович</td>
+                <td>18.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>174</td>
+                <td>Барыбкин Алексей Викторович</td>
+                <td>18.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>175</td>
+                <td>Чыжыр-Оол Минчей Андреевна</td>
+                <td>18.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>176</td>
+                <td>Чыдым Мария Анатольевна</td>
+                <td>19.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>177</td>
+                <td>Большаков Алексей Викторович</td>
+                <td>19.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>178</td>
+                <td>Ткачев Вячеслав Владимирович</td>
+                <td>19.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>179</td>
+                <td>Быков Владимир Константинович</td>
+                <td>19.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>180</td>
+                <td>Котлевский Петр Владимирович</td>
+                <td>19.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>181</td>
+                <td>Макина Далила Олеговна</td>
+                <td>20.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>182</td>
+                <td>Сиваков Антон Андреевич</td>
+                <td>22.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>183</td>
+                <td>Кирлиг-Кара Назын Айдынович</td>
+                <td>22.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>184</td>
+                <td>Саблин Данила Витальевич</td>
+                <td>22.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>185</td>
+                <td>Новоселов Никита Николаевич</td>
+                <td>22.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>186</td>
+                <td>Черняков Андрей Юрьевич</td>
+                <td>22.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>187</td>
+                <td>Романенко Илья Евгеньевич</td>
+                <td>22.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>188</td>
+                <td>Никитина Полина Вячеславовна</td>
+                <td>23.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>189</td>
+                <td>Иптышев Алексей Владимирович</td>
+                <td>23.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>190</td>
+                <td>Степанов Кирилл Андреевич</td>
+                <td>23.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>191</td>
+                <td>Кузин Никита Александрович</td>
+                <td>23.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr style="text-decoration:line-through">
+                <td>192</td>
+                <td>Фирсов Виктор Евгеньевич</td>
+                <td>23.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>193</td>
+                <td>Салтымаков Тимофей Олегович</td>
+                <td>23.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>194</td>
+                <td>Коновалов Сергей Александрович</td>
+                <td>24.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>195</td>
+                <td>Мануйлов Артём Игоревич</td>
+                <td>24.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>196</td>
+                <td>Думен Сайдаш Шолбанович</td>
+                <td>24.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>197</td>
+                <td>Глебов Дмитрий Александрович</td>
+                <td>24.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>198</td>
+                <td>Тороков Дмитрий Евгеньевич</td>
+                <td>24.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>199</td>
+                <td>Бредюк Илья Андреевич</td>
+                <td>25.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>Ярополов Семен Павлович</td>
+                <td>25.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>Толстоноженко Егор Владимирович</td>
+                <td>25.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>Новашев Антон Андреевич</td>
+                <td>25.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>203</td>
+                <td>Сарлин Сергей Викторович</td>
+                <td>26.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>Кара Данил Степанович</td>
+                <td>26.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>205</td>
+                <td>Куру Иван Алексеевич</td>
+                <td>26.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>206</td>
+                <td>Пилипейко Андрей Александрович</td>
+                <td>26.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+            <tr>
+                <td>207</td>
+                <td>Ковтун Андрей Андреевич</td>
+                <td>26.07.2019</td>
+                <td>ЕГЭ</td>
+            </tr>
+        </tbody></table>
+    </div>
+
+
+</body></html>

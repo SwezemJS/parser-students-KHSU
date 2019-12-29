@@ -3,7 +3,7 @@
 
 Python 3
 
-PiPy Module :
+PyPi Module :
 <ul>
 <li>pip install BeautifulSoup4</li>
 <li>pip install PyMySQL</li>
